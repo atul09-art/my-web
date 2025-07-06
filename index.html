@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designer Portfolio</title>
+    <link rel="stylesheet" href="modern.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>DESIGN PORTFOLIO</h1>
+                <h2>INTERIOR ARCHITECTURE</h2>
+                <div class="hero-meta">
+                    <span>2020 / 2025 DESIGN PORTFOLIO</span>
+                    <span class="divider">|</span>
+                    <span>PRESENTED BY <b>ARKLINE STUDIO</b></span>
+                </div>
+                <div class="hero-meta hero-meta-secondary">
+                    <span>INTERIOR DESIGN</span>
+                    <span class="divider">|</span>
+                    <span>ARCHITECTURE DESIGN</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Interior Portfolio Cover">
+            </div>
+        </div>
+        <nav class="hero-nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-flex">
+            <div class="about-photo">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Designer Portrait">
+            </div>
+            <div class="about-info">
+                <h3>Henry Wotton</h3>
+                <p class="about-role">Interior Designer &amp; Architect</p>
+                <p class="about-desc">Founded in 2015, <b>Arkline Studio</b> is known for innovative, personalized interior solutions. Our mission is to craft beautiful, functional spaces that reflect our clients’ unique styles and needs, emphasizing quality craftsmanship, creativity, and timeless design.</p>
+                <div class="about-stats">
+                    <div><span class="stat">150+</span><span>Projects</span></div>
+                    <div><span class="stat">99%</span><span>Satisfaction</span></div>
+                    <div><span class="stat">10+</span><span>Years</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Emma Johnson</h4>
+                <span>Lead Interior Designer</span>
+            </div>
+            <div class="team-member">
+                <h4>Liam Smith</h4>
+                <span>Project Manager</span>
+            </div>
+            <div class="team-member">
+                <h4>Sophia Lee</h4>
+                <span>Design Assistant</span>
+            </div>
+        </div>
+        <div class="about-cta">
+            <h4>Design Your Space</h4>
+            <p>Ready to transform your space? <a href="#contact">Contact us</a> to start your design journey.</p>
+            <a href="#projects" class="cta-btn">View Our Portfolio</a>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Modern Living Room">
+                    <div class="project-overlay">
+                        <a href="https://drive.google.com/file/d/13BKSEQAYuFU6eysikcdjEn81l8qOw15S/view?usp=sharing" target="_blank" rel="noopener" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <h3>Modern Living Room</h3>
+                <p>Elegant and cozy living room with a modern touch.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Minimalist Kitchen">
+                    <div class="project-overlay">
+                        <a href="https://drive.google.com/file/d/13BKSEQAYuFU6eysikcdjEn81l8qOw15S/view?usp=sharing" target="_blank" rel="noopener" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <h3>Minimalist Kitchen</h3>
+                <p>Clean lines and functional design for a family kitchen.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80" alt="Luxury Bedroom">
+                    <div class="project-overlay">
+                        <a href="https://drive.google.com/file/d/13BKSEQAYuFU6eysikcdjEn81l8qOw15S/view?usp=sharing" target="_blank" rel="noopener" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <h3>Luxury Bedroom</h3>
+                <p>Serene and luxurious bedroom retreat.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+        <script>
+        // Add a little animation for addictiveness
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, i) => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(40px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.7s cubic-bezier(.68,-0.55,.27,1.55)';
+                    card.style.opacity = 1;
+                    card.style.transform = 'translateY(0)';
+                }, 300 + i * 250);
+            });
+        });
+        </script>
+    </footer>
+</body>
+</html>
